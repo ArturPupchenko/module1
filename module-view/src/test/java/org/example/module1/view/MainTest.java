@@ -32,6 +32,7 @@ public class MainTest {
     public void task4(){
         assertTrue(Task4.isStringValid("a{s(asd[asd]ladk;d,aas.)}"));
         assertFalse(Task4.isStringValid("{((sdsd[sf]))"));
+        assertTrue(Task4.isStringValid(""));
     }
 
 }
