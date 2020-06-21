@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.example.module1.level1.Task1;
 import org.example.module1.level1.Task2;
+import org.example.module1.level1.Task3;
 
 public class MainTest {
 
@@ -18,6 +19,12 @@ public class MainTest {
     public void task2(){
         assertTrue(Task2.isMoveAvailable(1,2,2,4));
         assertFalse(Task2.isMoveAvailable(4,4,7,7));
+    }
+
+    @Test
+    public void task3(){
+        assertEquals(115,Math.round(new Task3().calculateTriangleArea(8,3,-6,-9,-10,4)));
+        assertEquals(0,new Task3().calculateTriangleArea(1,1,1,1,1,1));
     }
 
 }

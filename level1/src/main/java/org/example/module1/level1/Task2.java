@@ -1,7 +1,5 @@
 package org.example.module1.level1;
 
-import java.math.MathContext;
-
 public class Task2 {
 
     public static boolean isMoveAvailable(int x1, int y1, int x2, int y2) {
