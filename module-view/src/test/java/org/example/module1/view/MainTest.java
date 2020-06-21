@@ -1,5 +1,6 @@
 package org.example.module1.view;
 
+import org.example.module1.level2.Task4;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.example.module1.level1.Task1;
@@ -25,6 +26,12 @@ public class MainTest {
     public void task3(){
         assertEquals(115,Math.round(new Task3().calculateTriangleArea(8,3,-6,-9,-10,4)));
         assertEquals(0,new Task3().calculateTriangleArea(1,1,1,1,1,1));
+    }
+
+    @Test
+    public void task4(){
+        assertTrue(Task4.isStringValid("a{s(asd[asd]ladk;d,aas.)}"));
+        assertFalse(Task4.isStringValid("{((sdsd[sf]))"));
     }
 
 }

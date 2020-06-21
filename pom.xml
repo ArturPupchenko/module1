@@ -11,6 +11,7 @@
     <modules>
         <module>level1</module>
         <module>module-view</module>
+        <module>level2</module>
     </modules>
 
     <packaging>pom</packaging>

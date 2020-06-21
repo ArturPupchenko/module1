@@ -3,6 +3,7 @@ package org.example.module1.view;
 import org.example.module1.level1.Task1;
 import org.example.module1.level1.Task2;
 import org.example.module1.level1.Task3;
+import org.example.module1.level2.Task4;
 
 import java.util.Random;
 
@@ -61,12 +62,30 @@ public class Main {
         blankspace();
     }
 
+    public static void isStringValid(String str) {
+        System.out.println("Уровень 2 Задача 1");
+        System.out.println("Учитывая строку, содержащую символы '(', ')', '{', '}', '[' и ']',\n" +
+               "необходимо определить, является ли входная строка допустимой.\n" +
+                "Входная строка действительна, если:\n" +
+                "Открытые скобки должны быть закрыты скобками того же типа.\n" +
+                "Открытые скобки должны быть закрыты в правильном порядке.\n" +
+                "Пустая строка также считается допустимой.\n");
+        if (Task4.isStringValid(str)) System.out.println("Строка: " + str + " допустима!");
+        else System.out.println("Строк: "+ str + " недопустима!");
+        blankspace();
+    }
 
     public static void main(String[] args) {
         blankspace();
         uniqueSymbols();
         canHorseMove();
         triangleArea();
+        isStringValid("{(a,a[.(sd)d;b])}");
+
+
+
+
+
 
     }
 
